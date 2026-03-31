@@ -2,26 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Firefly Marketing</title>
+  <title>Firefly Marketing</title>
   <style>
-    body { font-family: Arial, sans-serif; background:#000; color:#D4AF37; margin:0; padding:0; text-align:center; line-height:1.8em; }
-    header { padding:80px 20px; }
-    h1 { font-size:3em; text-shadow:1px 1px 2px #000; margin-bottom:20px; }
-    p { font-size:1.2em; max-width:700px; margin:15px auto; }
-    a.button { display:inline-block; margin:20px 10px; padding:15px 30px; background:#D4AF37; color:#000; text-decoration:none; border-radius:8px; font-size:1.2em; font-weight:bold; transition:0.3s; }
-    a.button:hover { background:#b9962b; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0A0A0A; /* Dark Charcoal */
+      color: #B99B5F; /* Primary Gold */
+      margin: 0;
+      padding: 0;
+      line-height: 1.6em;
+      text-align: center;
+    }
+    header { padding: 80px 20px; }
+    h1 { font-size: 3em; margin-bottom: 10px; text-shadow: 1px 1px 2px #000; }
+    p { font-size: 1.2em; max-width: 700px; margin: 10px auto; }
+    a.button {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 15px 30px;
+      background: #B99B5F;
+      color: #0A0A0A;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.button:hover { background: #a88c50; }
+    img { width: 200px; margin-bottom: 20px; }
+    section { padding: 60px 20px; text-align: center; }
+    .services { max-width: 800px; margin: 0 auto; }
+    .services ul { list-style: none; padding: 0; }
+    .services li { margin: 15px 0; font-size: 1.1em; }
+    .testimonials { max-width: 700px; margin: 0 auto; }
+    .testimonial { margin: 20px 0; font-style: italic; }
   </style>
 </head>
 <body>
   <header>
-    <h1>About Firefly Marketing</h1>
+    <img src="logo.png" alt="Firefly Logo">
+    <h1>Firefly Marketing</h1>
+    <p>Helping Short Term Rental owners in Greater Nashville shine</p>
+    <p>Branding, staging, and marketing for maximum profitability</p>
+    <a class="button" href="about.html">Learn More</a>
+    <a class="button" href="contact.html">Contact Us</a>
   </header>
 
-  <p>Firefly Marketing helps Short Term Rental owners in the Greater Nashville area elevate their homes on platforms like Airbnb and Vrbo.</p>
-  <p>Our full-service approach includes branding, staging, and optimized marketing, plus cleaning, maintenance, and 24-hour check-in support.</p>
-  <p>Founded by a local property marketing specialist, we are dedicated to making each home unique, memorable, and profitable. Every detail is handled to ensure a seamless guest experience.</p>
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Professional branding & home staging</li>
+      <li>Optimized Airbnb & VRBO listings</li>
+      <li>Cleaning, maintenance, and 24-hour check-in services</li>
+      <li>Memorable guest experiences & marketing strategy</li>
+    </ul>
+  </section>
 
-  <a class="button" href="index.html">Back to Home</a>
-  <a class="button" href="contact.html">Contact Us</a>
+  <section class="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial">“Firefly Marketing transformed my rental — bookings and reviews skyrocketed!” – Jane D.</div>
+    <div class="testimonial">“Professional, attentive, and my home looks amazing.” – Mark T.</div>
+    <div class="testimonial">“Everything handled seamlessly, highly recommend Firefly!” – Emily R.</div>
+  </section>
 </body>
 </html>
