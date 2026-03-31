@@ -2,24 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Firefly Marketing</title>
+  <title>Firefly Marketing Group</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0A0A0A; /* Dark Charcoal */
-      color: #B99B5F; /* Primary Gold */
+      font-family: 'Arial', sans-serif;
+      background: #0A0A0A;
+      color: #B99B5F;
       margin: 0;
       padding: 0;
-      line-height: 1.6em;
       text-align: center;
+      overflow-x: hidden;
     }
-    header { padding: 80px 20px; }
-    h1 { font-size: 3em; margin-bottom: 10px; text-shadow: 1px 1px 2px #000; }
-    p { font-size: 1.2em; max-width: 700px; margin: 10px auto; }
-    a.button {
+    header {
+      padding: 120px 20px 80px 20px; /* extra top padding for space above logo */
+    }
+    img {
+      width: 220px;
+      margin-bottom: 50px; /* extra space below logo */
+    }
+    h1 {
+      font-size: 3.2em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .tagline {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeInUp 2s forwards;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .button {
       display: inline-block;
       margin: 15px 10px;
-      padding: 15px 30px;
+      padding: 15px 35px;
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
@@ -28,41 +47,18 @@
       font-weight: bold;
       transition: 0.3s;
     }
-    a.button:hover { background: #a88c50; }
-    img { width: 200px; margin-bottom: 20px; }
-    section { padding: 60px 20px; text-align: center; }
-    .services { max-width: 800px; margin: 0 auto; }
-    .services ul { list-style: none; padding: 0; }
-    .services li { margin: 15px 0; font-size: 1.1em; }
-    .testimonials { max-width: 700px; margin: 0 auto; }
-    .testimonial { margin: 20px 0; font-style: italic; }
+    .button:hover {
+      background: #a88c50;
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Firefly Logo">
-    <h1>Firefly Marketing</h1>
-    <p>Helping Short Term Rental owners in Greater Nashville shine</p>
-    <p>Branding, staging, and marketing for maximum profitability</p>
+    <h1>Welcome to the Firefly Marketing Group</h1>
+    <div class="tagline">Helping Short Term Rental Owners Shine | Branding • Staging • Marketing • 24/7 Support</div>
     <a class="button" href="about.html">Learn More</a>
     <a class="button" href="contact.html">Contact Us</a>
   </header>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Professional branding & home staging</li>
-      <li>Optimized Airbnb & VRBO listings</li>
-      <li>Cleaning, maintenance, and 24-hour check-in services</li>
-      <li>Memorable guest experiences & marketing strategy</li>
-    </ul>
-  </section>
-
-  <section class="testimonials">
-    <h2>What Clients Say</h2>
-    <div class="testimonial">“Firefly Marketing transformed my rental — bookings and reviews skyrocketed!” – Jane D.</div>
-    <div class="testimonial">“Professional, attentive, and my home looks amazing.” – Mark T.</div>
-    <div class="testimonial">“Everything handled seamlessly, highly recommend Firefly!” – Emily R.</div>
-  </section>
 </body>
 </html>
