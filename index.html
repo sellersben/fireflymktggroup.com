@@ -16,14 +16,36 @@
       overflow-x: hidden;
       line-height: 1.6em;
     }
+
+    /* --- NAVIGATION BAR --- */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0A0A0A;
+      border-bottom: 1px solid #B99B5F;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #B99B5F;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffffff; }
+
     header {
       padding: 120px 20px 80px 20px;
     }
     img {
-      width: 300px; /* increased size */
-      max-width: 90%; /* responsive for mobile */
+      width: 300px; 
+      max-width: 90%;
       margin-bottom: 50px;
-      filter: drop-shadow(2px 2px 4px #000); /* subtle shadow to improve readability */
+      filter: drop-shadow(2px 2px 4px #000);
     }
     h1 {
       font-size: 3.2em;
@@ -52,9 +74,7 @@
       font-weight: bold;
       transition: 0.3s;
     }
-    .button:hover {
-      background: #a88c50;
-    }
+    .button:hover { background: #a88c50; }
 
     .core-pillars {
       display: flex;
@@ -106,12 +126,23 @@
       padding: 30px 20px;
       margin-top: 60px;
       font-size: 1em;
+      text-align: center;
     }
     footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
     footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
+
   <header>
     <img src="logo3.png" alt="Firefly Real Estate Holdings LLC Logo">
     <h1>Full-Service Luxury Asset Management & Short-Term Rental Optimization</h1>
@@ -152,5 +183,6 @@
     Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> | Phone: (615) 266-6787 | Nashville, TN<br>
     <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
   </footer>
+
 </body>
 </html>
