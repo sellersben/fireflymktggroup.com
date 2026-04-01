@@ -1,13 +1,17 @@
+bout page styling, with consistent branding, buttons, and form functionality. Ready to copy-paste:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Contact Firefly Real Estate Holdings LLC</title>
+  <meta name="description" content="Reach out to Firefly Real Estate Holdings LLC in Nashville for full-service luxury rental management and short-term rental optimization.">
+  <meta name="keywords" content="Contact Firefly, Luxury rental management, Short term rentals, Airbnb, VRBO, Nashville">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #0A0A0A; /* Dark Charcoal */
-      color: #B99B5F; /* Primary Gold */
+      background: #0A0A0A;
+      color: #B99B5F;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -55,6 +59,14 @@
       font-weight: bold;
       margin-top: 20px;
     }
+    footer {
+      background: #080808;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 1em;
+    }
+    footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -62,8 +74,8 @@
     <h1>Contact Firefly Real Estate Holdings LLC</h1>
   </header>
 
-  <p>Email: <a href="mailto:anig@fireflymktggroup.com">anig@fireflymktggroup.com</a></p>
-  <p>Phone: (615) 266-6787</p>
+  <p>Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a></p>
+  <p>Phone: (615) 266-6787 | Nashville, TN</p>
   <p>Reach out today to see how we can help your rental shine!</p>
 
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
@@ -88,7 +100,13 @@
   <a class="button" href="index.html">Back to Home</a>
   <a class="button" href="about.html">About Us</a>
 
+  <footer>
+    Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> | Phone: (615) 266-6787 | Nashville, TN<br>
+    <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+  </footer>
+
   <script>
+    // Show success message without leaving page
     const form = document.querySelector('form');
     const successMessage = document.getElementById('successMessage');
     form.addEventListener('submit', function(e){
