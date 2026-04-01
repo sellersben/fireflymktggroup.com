@@ -1,106 +1,172 @@
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background: #0A0A0A;
-    color: #B99B5F;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    line-height: 1.6em;
-  }
-
-  header {
-    padding: 100px 20px 60px 20px;
-  }
-
-  img {
-    width: 400px; /* bigger logo */
-    max-width: 90%; /* responsive on smaller screens */
-    margin-bottom: 50px;
-  }
-
-  h1, h2 {
-    text-shadow: 2px 2px 6px #000; /* stronger shadow for readability */
-  }
-
-  h1 {
-    font-size: 4em; /* bigger and bolder */
-    font-weight: 900;
-    margin-bottom: 25px;
-    letter-spacing: 1px; /* modern look */
-  }
-
-  h2 {
-    font-size: 2.2em;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-
-  .content {
-    max-width: 900px;
-    margin: 0 auto 60px auto;
-    font-size: 1.2em;
-    line-height: 1.7em;
-    text-align: left;
-    padding: 0 20px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 20px;
-  }
-
-  li::before {
-    content: "• ";
-    color: #B99B5F;
-  }
-
-  a.button {
-    display: inline-block;
-    margin: 15px 10px;
-    padding: 12px 30px;
-    background: #B99B5F;
-    color: #0A0A0A;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  a.button:hover {
-    background: #a88c50;
-  }
-
-  hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-    margin: 50px 0;
-  }
-
-  footer {
-    background: #080808;
-    padding: 30px 20px;
-    margin-top: 60px;
-    font-size: 1em;
-  }
-
-  footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
-  footer a:hover { text-decoration: underline; }
-
-  .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.5s;
-  }
-
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About – Firefly Real Estate Holdings LLC</title>
+  <meta name="description" content="Learn more about Firefly Real Estate Holdings LLC and our luxury short-term rental management services in Nashville.">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0A0A0A;
+      color: #B99B5F;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 1.6em;
     }
-  }
-</style>
+
+    /* --- NAVIGATION BAR --- */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0A0A0A;
+      border-bottom: 1px solid #B99B5F;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #B99B5F;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffffff; }
+
+    header {
+      padding: 100px 20px 60px 20px;
+    }
+    img {
+      width: 400px;
+      max-width: 90%;
+      margin-bottom: 50px;
+    }
+    h1, h2 {
+      text-shadow: 2px 2px 6px #000;
+    }
+    h1 {
+      font-size: 4em;
+      font-weight: 900;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 2.2em;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto 60px auto;
+      font-size: 1.2em;
+      line-height: 1.7em;
+      text-align: left;
+      padding: 0 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+    li::before {
+      content: "• ";
+      color: #B99B5F;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 12px 30px;
+      background: #B99B5F;
+      color: #0A0A0A;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #a88c50;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #333;
+      margin: 50px 0;
+    }
+
+    footer {
+      background: #080808;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 1em;
+      text-align: center;
+    }
+    footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.5s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
+
+  <header>
+    <img src="logo3.png" alt="Firefly Real Estate Holdings LLC Logo">
+    <h1>About Firefly Real Estate Holdings LLC</h1>
+    <div class="fade-in">
+      Delivering luxury short-term rental management in Nashville with hotel-grade operations, turnkey logistics, and full regulatory compliance.
+    </div>
+  </header>
+
+  <div class="content fade-in">
+    <h2>Our Mission</h2>
+    <p>At Firefly Real Estate Holdings LLC, we strive to maximize rental revenue while providing a seamless, high-end experience for property owners and guests alike.</p>
+
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Full-service short-term rental management for premium properties</li>
+      <li>Professional staging, cleaning, and maintenance exceeding 5-star standards</li>
+      <li>24/7 guest concierge and support</li>
+      <li>Regulatory compliance management to protect your investment</li>
+      <li>Marketing and revenue optimization across Airbnb, VRBO, and other platforms</li>
+    </ul>
+
+    <h2>Why Choose Firefly?</h2>
+    <p>We combine industry expertise with hands-on attention to detail to ensure every property performs at its maximum potential while guests enjoy a luxury experience.</p>
+
+    <a class="button" href="contact.html">Get in Touch</a>
+  </div>
+
+  <footer>
+    Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> | Phone: (615) 266-6787 | Nashville, TN<br>
+    <a href="index.html">Home</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+  </footer>
+
+</body>
+</html>
