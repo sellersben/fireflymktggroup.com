@@ -1,5 +1,3 @@
-bout page styling, with consistent branding, buttons, and form functionality. Ready to copy-paste:
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +16,7 @@ bout page styling, with consistent branding, buttons, and form functionality. Re
       line-height: 1.6em;
     }
     header { padding: 80px 20px; }
-    h1 { font-size: 3em; text-shadow: 1px 1px 2px #000; margin-bottom: 20px; }
+    h1 { font-size: 3em; text-shadow: 1px 1px 3px #000; margin-bottom: 20px; }
     p { font-size: 1.2em; margin: 10px auto; max-width: 700px; }
     a.button {
       display: inline-block;
@@ -33,10 +31,10 @@ bout page styling, with consistent branding, buttons, and form functionality. Re
       transition: 0.3s;
     }
     a.button:hover { background: #a88c50; }
-    form { max-width: 500px; margin: 30px auto; text-align: left; }
+    form { max-width: 500px; margin: 30px auto 60px auto; text-align: left; }
     input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin: 10px 0;
       border-radius: 6px;
       border: 1px solid #B99B5F;
@@ -58,11 +56,11 @@ bout page styling, with consistent branding, buttons, and form functionality. Re
       color: #a3d9a5;
       font-weight: bold;
       margin-top: 20px;
+      text-align: center;
     }
     footer {
       background: #080808;
       padding: 30px 20px;
-      margin-top: 60px;
       font-size: 1em;
     }
     footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
@@ -79,17 +77,17 @@ bout page styling, with consistent branding, buttons, and form functionality. Re
   <p>Reach out today to see how we can help your rental shine!</p>
 
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
-    <label>Name:</label>
-    <input type="text" name="name" required>
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name" required>
 
-    <label>Email:</label>
-    <input type="email" name="email" required>
+    <label for="email">Email:</label>
+    <input id="email" type="email" name="email" required>
 
-    <label>Phone:</label>
-    <input type="tel" name="phone" placeholder="(123) 456-7890" required>
+    <label for="phone">Phone:</label>
+    <input id="phone" type="tel" name="phone" placeholder="(123) 456-7890" required>
 
-    <label>Message:</label>
-    <textarea name="message" rows="5" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
     <input type="submit" value="Send Message">
     <div class="success-message" id="successMessage" style="display:none;">
@@ -119,6 +117,7 @@ bout page styling, with consistent branding, buttons, and form functionality. Re
         if (response.ok) {
           successMessage.style.display = 'block';
           form.reset();
+          window.scrollTo({ top: form.offsetTop - 20, behavior: 'smooth' });
         } else {
           alert('Oops! There was a problem submitting your form.');
         }
