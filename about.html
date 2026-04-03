@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About – Firefly Real Estate Holdings LLC</title>
-  <meta name="description" content="Learn more about Firefly Real Estate Holdings LLC and our luxury short-term rental management services in Nashville.">
+  <title>About Firefly Real Estate Holdings LLC</title>
+  <meta name="description" content="Learn more about Firefly Real Estate Holdings LLC, a full-service luxury short-term rental management company in Nashville.">
 
   <style>
     body {
@@ -17,7 +17,6 @@
       line-height: 1.6em;
     }
 
-    /* --- NAVIGATION BAR --- */
     nav {
       position: sticky;
       top: 0;
@@ -29,7 +28,6 @@
       z-index: 1000;
       backdrop-filter: blur(6px);
     }
-
     nav a {
       color: #B99B5F;
       text-decoration: none;
@@ -38,21 +36,19 @@
       font-size: 1em;
       transition: 0.3s;
     }
-
     nav a:hover { color: #ffffff; }
 
     header {
-      padding: 80px 20px 40px 20px;
-      min-height: 60vh;
+      padding: 80px 20px 50px 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     img {
-      width: 260px;
+      width: 260px; 
       max-width: 85%;
-      margin: 0 auto 25px auto;
+      margin: 0 auto 30px auto;
       filter: drop-shadow(2px 2px 6px #000);
     }
 
@@ -61,53 +57,24 @@
       max-width: 800px;
       margin: 0 auto 15px auto;
       text-shadow: 1px 1px 3px #000;
-      line-height: 1.3em;
     }
 
-    h2 {
-      font-size: 1.6em;
-      margin-top: 40px;
-      margin-bottom: 15px;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    .subtext {
-      font-size: 1.1em;
+    .tagline {
+      font-size: 1.2em;
       max-width: 700px;
-      margin: 0 auto;
+      margin: 0 auto 30px auto;
       opacity: 0;
       animation: fadeInUp 1.5s forwards;
     }
 
-    .content {
-      max-width: 800px;
-      margin: 40px auto;
-      font-size: 1.05em;
-      line-height: 1.7em;
-      text-align: left;
-      padding: 0 20px;
-      opacity: 0;
-      animation: fadeInUp 1.5s forwards;
-      animation-delay: 0.4s;
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin: 10px 0;
-    }
-
-    li::before {
-      content: "• ";
-      color: #B99B5F;
-    }
-
-    a.button {
+    .button {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px;
       padding: 12px 28px;
       background: #B99B5F;
       color: #0A0A0A;
@@ -117,9 +84,29 @@
       font-weight: bold;
       transition: 0.3s;
     }
+    .button:hover { background: #a88c50; }
 
-    a.button:hover {
-      background: #a88c50;
+    .button.small-btn {
+      padding: 8px 20px;
+      font-size: 0.9em;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: 30px auto 50px auto;
+      text-align: left;
+      padding: 20px;
+    }
+
+    .about-content h2 {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+    }
+
+    .about-content p {
+      font-size: 1em;
+      line-height: 1.6em;
+      margin-bottom: 15px;
     }
 
     footer {
@@ -128,38 +115,20 @@
       margin-top: 40px;
       font-size: 0.9em;
     }
-
-    footer a {
-      color: #B99B5F;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
+    footer a { color: #B99B5F; text-decoration: none; margin: 0 8px; }
     footer a:hover { text-decoration: underline; }
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-
-    /* --- MOBILE --- */
     @media (max-width: 768px) {
       h1 { font-size: 1.6em; }
-      h2 { font-size: 1.3em; }
-      .subtext { font-size: 1em; }
+      .tagline { font-size: 1em; }
       img { width: 200px; }
-      nav a {
-        margin: 0 8px;
-        font-size: 0.9em;
-      }
+      nav a { margin: 0 8px; font-size: 0.9em; }
     }
 
   </style>
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -169,41 +138,29 @@
   </nav>
 
   <header>
-   <img src="logo7.png" style="image-rendering: -webkit-optimize-contrast;">
+    <img src="images/logo7.png" alt="Firefly Logo">
     <h1>About Firefly Real Estate Holdings</h1>
-
-    <div class="subtext">
-      Delivering luxury short-term rental management with hotel-grade operations, turnkey logistics, and full compliance.
+    <div class="tagline">
+      Delivering hands-off, luxury short-term rental management with 5-star hospitality standards.
     </div>
+    <a class="button small-btn" href="contact.html">Contact Us</a>
+    <a class="button small-btn" href="index.html">Home</a>
   </header>
 
-  <div class="content">
-    <h2>Our Mission</h2>
-    <p>
-      We maximize rental revenue while delivering a seamless, high-end experience for both property owners and guests.
-    </p>
+  <div class="about-content">
+    <h2>Who We Are</h2>
+    <p>Firefly Real Estate Holdings LLC specializes in full-service short-term rental management in Nashville, TN. We provide professional staging, cleaning, guest services, and compliance management to ensure your property operates at maximum revenue potential.</p>
 
-    <h2>What We Offer</h2>
-    <ul>
-      <li>Full-service short-term rental management for premium properties</li>
-      <li>Professional staging, cleaning, and maintenance exceeding 5-star standards</li>
-      <li>24/7 guest concierge and support</li>
-      <li>Regulatory compliance to protect your investment</li>
-      <li>Marketing and revenue optimization across all major platforms</li>
-    </ul>
+    <h2>Our Approach</h2>
+    <p>We combine hotel-grade operations with turnkey logistics and regulatory compliance. Our team handles every detail, providing owners a hands-off experience while maintaining high standards of hospitality and care for guests.</p>
 
-    <h2>Why Choose Firefly?</h2>
-    <p>
-      We combine deep operational expertise with hands-on execution to ensure your property performs at its highest potential—while delivering a luxury guest experience every time.
-    </p>
-
-    <a class="button" href="contact.html">Get in Touch</a>
+    <h2>Our Commitment</h2>
+    <p>Every property is treated as a premium asset. Our goal is to protect and maximize your investment through expert management, transparent reporting, and 24/7 concierge support.</p>
   </div>
 
   <footer>
     Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> |
     Phone: (615) 266-6787 | Nashville, TN<br><br>
-
     <a href="index.html">Home</a> |
     <a href="contact.html">Contact</a> |
     <a href="privacy.html">Privacy Policy</a> |
@@ -212,3 +169,6 @@
 
 </body>
 </html>
+
+If you want, I can 
+finish
