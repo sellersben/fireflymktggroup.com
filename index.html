@@ -8,7 +8,7 @@
 
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: url('https://www.transparenttextures.com/patterns/black-leather.png');
       background-color: #0A0A0A;
       color: #B99B5F;
@@ -19,6 +19,7 @@
       line-height: 1.6em;
     }
 
+    /* --- NAVIGATION BAR --- */
     nav {
       position: sticky;
       top: 0;
@@ -30,7 +31,6 @@
       z-index: 1000;
       backdrop-filter: blur(6px);
     }
-
     nav a {
       color: #B99B5F;
       text-decoration: none;
@@ -39,36 +39,38 @@
       font-size: 1em;
       transition: 0.3s;
     }
-
     nav a:hover { color: #ffffff; }
 
+    /* --- HERO SECTION --- */
     header {
-      padding: 80px 20px 50px 20px;
-      min-height: 80vh;
+      position: relative;
+      padding: 50px 20px 30px 20px;
+      min-height: 70vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
 
-    img {
-      width: 260px;
-      max-width: 85%;
-      margin: 0 auto 30px auto;
+    .logo {
+      width: 200px;
+      max-width: 80%;
+      margin-bottom: 20px;
       filter: drop-shadow(2px 2px 6px #000);
     }
 
     h1 {
-      font-size: 2.2em;
-      max-width: 800px;
+      font-size: 2em;
+      max-width: 750px;
       margin: 0 auto 15px auto;
       text-shadow: 1px 1px 3px #000;
-      line-height: 1.3em;
+      line-height: 1.2em;
     }
 
     .tagline {
-      font-size: 1.2em;
+      font-size: 1.1em;
       max-width: 700px;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 25px auto;
       opacity: 0;
       animation: fadeInUp 1.5s forwards;
     }
@@ -80,7 +82,7 @@
 
     .button {
       display: inline-block;
-      margin: 10px;
+      margin: 5px 10px;
       padding: 12px 28px;
       background: #B99B5F;
       color: #0A0A0A;
@@ -88,14 +90,11 @@
       border-radius: 8px;
       font-size: 1em;
       font-weight: bold;
-      transition: 0.3s;
+      transition: transform 0.3s, background 0.3s;
     }
-    .button:hover { background: #a88c50; }
-
-    /* Smaller header buttons */
-    .button.small-btn {
-      padding: 8px 20px;
-      font-size: 0.9em;
+    .button:hover { 
+      background: #a88c50; 
+      transform: translateY(-2px);
     }
 
     .core-pillars {
@@ -105,7 +104,6 @@
       margin: 40px 20px;
       gap: 20px;
     }
-
     .pillar {
       background: rgba(10,10,10,0.85);
       border: 1px solid #B99B5F;
@@ -116,49 +114,49 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.8);
       text-align: left;
     }
-
-    .pillar h3 {
-      font-size: 1.3em;
-      margin-bottom: 10px;
-    }
-
-    .pillar p {
-      font-size: 0.95em;
-      line-height: 1.5em;
-    }
+    .pillar h3 { font-size: 1.3em; margin-bottom: 10px; }
+    .pillar p { font-size: 0.95em; line-height: 1.5em; }
 
     .testimonials {
       max-width: 700px;
       margin: 50px auto;
       text-align: center;
     }
+    .testimonial { margin: 15px 0; font-style: italic; font-size: 1.1em; }
 
-    .testimonial {
-      margin: 15px 0;
-      font-style: italic;
-      font-size: 1.1em;
-    }
-
-    .trust {
-      margin: 30px auto;
-      font-size: 1.1em;
-      max-width: 600px;
-    }
+    .trust { margin: 20px auto 40px auto; font-size: 1.1em; max-width: 600px; }
 
     footer {
       background: rgba(5,5,5,0.95);
       padding: 25px 15px;
-      margin-top: 40px;
       font-size: 0.9em;
     }
-
     footer a { color: #B99B5F; text-decoration: none; margin: 0 8px; }
     footer a:hover { text-decoration: underline; }
+
+    /* --- FLOATING CONTACT BUTTON MOBILE --- */
+    .floating-contact {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #B99B5F;
+      color: #0A0A0A;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px #000;
+      z-index: 999;
+      transition: transform 0.3s, background 0.3s;
+      display: none;
+    }
+    .floating-contact:hover { transform: translateY(-3px); background: #a88c50; }
+    @media (max-width: 600px) { .floating-contact { display: block; } }
 
     @media (max-width: 768px) {
       h1 { font-size: 1.6em; }
       .tagline { font-size: 1em; }
-      img { width: 200px; }
+      .logo { width: 160px; }
       nav a { margin: 0 8px; font-size: 0.9em; }
     }
 
@@ -175,15 +173,13 @@
   </nav>
 
   <header>
-    <img src="./logo7.png" alt="Firefly Logo">
+    <img src="./logo7.png" alt="Firefly Logo" class="logo">
     <h1>Luxury Asset Management & Short-Term Rental Optimization</h1>
-
     <div class="tagline">
       5-star hospitality standards for premium property owners. We maximize revenue through expert staging, concierge service, and compliance management.
     </div>
-
-    <a class="button small-btn" href="about.html">Learn More</a>
-    <a class="button small-btn" href="contact.html">Contact Us</a>
+    <a class="button" href="about.html">Learn More</a>
+    <a class="button" href="contact.html">Contact Us</a>
   </header>
 
   <div class="core-pillars">
@@ -220,6 +216,8 @@
     <a href="privacy.html">Privacy Policy</a> |
     <a href="terms.html">Terms of Use</a>
   </footer>
+
+  <a href="contact.html" class="floating-contact">Contact Us</a>
 
 </body>
 </html>
