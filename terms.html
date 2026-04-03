@@ -4,75 +4,137 @@
   <meta charset="UTF-8">
   <title>Terms of Use – Firefly Real Estate Holdings LLC</title>
   <meta name="description" content="Terms of Use for Firefly Real Estate Holdings LLC website and services.">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #0A0A0A;
+      background: url('https://www.transparenttextures.com/patterns/black-leather.png');
+      background-color: #0A0A0A;
       color: #B99B5F;
       margin: 0;
       padding: 0;
       line-height: 1.6em;
     }
 
-    /* --- NAVIGATION BAR --- */
+    /* --- NAVIGATION --- */
     nav {
       position: sticky;
       top: 0;
-      background: #0A0A0A;
+      background: rgba(10,10,10,0.95);
       border-bottom: 1px solid #B99B5F;
       display: flex;
       justify-content: center;
-      padding: 15px 0;
+      padding: 12px 0;
       z-index: 1000;
+      backdrop-filter: blur(6px);
     }
+
     nav a {
       color: #B99B5F;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 20px;
-      font-size: 1.1em;
+      margin: 0 15px;
+      font-size: 1em;
       transition: 0.3s;
     }
+
     nav a:hover { color: #ffffff; }
 
     header {
-      padding: 80px 20px 40px 20px;
+      padding: 70px 20px 20px 20px;
       text-align: center;
     }
-    h1 { font-size: 2.5em; text-shadow: 1px 1px 2px #000; margin-bottom: 20px; }
-    h2 { font-size: 1.8em; margin-top: 30px; }
-    p, li { font-size: 1.1em; margin: 10px 0; }
-    ul { padding-left: 20px; }
 
-    a.button {
+    img {
+      width: 220px;
+      max-width: 85%;
+      margin: 0 auto 15px auto;
+      display: block;
+      filter: drop-shadow(2px 2px 6px #000);
+    }
+
+    h1 {
+      font-size: 2em;
+      text-shadow: 1px 1px 3px #000;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 30px auto 60px auto;
+      padding: 0 20px;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      margin-top: 30px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    p, li {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    li::before {
+      content: "• ";
+      color: #B99B5F;
+    }
+
+    .button {
       display: inline-block;
       margin: 15px 10px;
-      padding: 12px 30px;
+      padding: 10px 24px;
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
       border-radius: 8px;
+      font-size: 0.95em;
       font-weight: bold;
       transition: 0.3s;
     }
-    a.button:hover { background: #a88c50; }
 
-    .content { max-width: 900px; margin: 0 auto 60px; padding: 0 20px; text-align: left; }
+    .button:hover { background: #a88c50; }
 
     footer {
-      background: #080808;
-      padding: 30px 20px;
-      margin-top: 60px;
-      font-size: 1em;
+      background: rgba(5,5,5,0.95);
+      padding: 25px 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
       text-align: center;
     }
-    footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
+
+    footer a {
+      color: #B99B5F;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
     footer a:hover { text-decoration: underline; }
+
+    /* --- MOBILE --- */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.5em; }
+      h2 { font-size: 1.2em; }
+      img { width: 180px; }
+      nav a {
+        margin: 0 8px;
+        font-size: 0.85em;
+      }
+    }
+
   </style>
 </head>
+
 <body>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -82,39 +144,54 @@
   </nav>
 
   <header>
+    <img src="logo7.png" alt="Firefly Real Estate Holdings LLC Logo">
     <h1>Terms of Use</h1>
+
     <a class="button" href="index.html">Home</a>
-    <a class="button" href="contact.html">Contact Us</a>
+    <a class="button" href="contact.html">Contact</a>
   </header>
 
   <div class="content">
-    <p>Welcome to the website of Firefly Real Estate Holdings LLC. By using this site or our services, you agree to the following terms.</p>
+    <p>
+      By using this website or our services, you agree to the following terms and conditions.
+    </p>
 
     <h2>Use of Site</h2>
     <ul>
-      <li>You may use this site for lawful purposes only.</li>
-      <li>You agree not to misuse or interfere with the site’s functionality or security.</li>
+      <li>Use this site for lawful purposes only</li>
+      <li>Do not interfere with site functionality or security</li>
     </ul>
 
     <h2>Intellectual Property</h2>
-    <p>All content, logos, images, and text on this website are owned by Firefly Real Estate Holdings LLC and may not be copied, reproduced, or distributed without permission.</p>
+    <p>
+      All content, logos, images, and text are the property of Firefly Real Estate Holdings LLC and may not be used without permission.
+    </p>
 
     <h2>Limitation of Liability</h2>
-    <p>Firefly Real Estate Holdings LLC is not liable for any damages arising from the use of this website or reliance on its content. Services are provided as described, and results may vary.</p>
+    <p>
+      We are not liable for damages arising from use of this site or reliance on its content. Results from services may vary.
+    </p>
 
-    <h2>Links to Third-Party Sites</h2>
-    <p>We may provide links to third-party websites for convenience. We are not responsible for their content or privacy practices.</p>
+    <h2>Third-Party Links</h2>
+    <p>
+      We may link to third-party sites. We are not responsible for their content or policies.
+    </p>
 
     <h2>Changes to Terms</h2>
-    <p>We reserve the right to modify these Terms of Use at any time. Changes will be posted on this page with the effective date.</p>
+    <p>
+      These terms may be updated at any time. Updates will be posted on this page.
+    </p>
 
-    <h2>Contact Us</h2>
-    <p>If you have questions about these Terms, please contact us at <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a>.</p>
+    <h2>Contact</h2>
+    <p>
+      Questions? Contact us at 
+      <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a>.
+    </p>
   </div>
 
   <footer>
-    &copy; 2026 Firefly Real Estate Holdings LLC | 
-    <a href="privacy.html">Privacy Policy</a> | 
+    © 2026 Firefly Real Estate Holdings LLC |
+    <a href="privacy.html">Privacy Policy</a> |
     <a href="terms.html">Terms of Use</a>
   </footer>
 
