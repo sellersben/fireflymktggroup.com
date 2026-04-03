@@ -41,7 +41,7 @@
 
     /* --- HEADER SECTION --- */
     header {
-      padding: 30px 20px 20px 20px; /* reduced top padding */
+      padding: 30px 20px 20px 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -49,9 +49,9 @@
     }
 
     .logo {
-      width: 180px; /* match home page */
+      width: 180px;
       max-width: 80%;
-      margin-bottom: 15px; /* closer spacing */
+      margin-bottom: 15px;
       filter: drop-shadow(2px 2px 6px #000);
     }
 
@@ -80,7 +80,7 @@
     .button {
       display: inline-block;
       margin: 5px 8px;
-      padding: 10px 25px; /* match rest of site */
+      padding: 10px 25px;
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
@@ -94,6 +94,15 @@
     .button:hover { 
       background: #a88c50; 
       transform: translateY(-2px);
+    }
+
+    /* --- BUTTON GROUP FOR INLINE BUTTONS --- */
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 10px;
     }
 
     /* --- ABOUT CONTENT --- */
@@ -127,7 +136,6 @@
       .logo { width: 160px; }
       nav a { margin: 0 8px; font-size: 0.9em; }
     }
-
   </style>
 </head>
 <body>
@@ -146,8 +154,10 @@
     <div class="tagline">
       Delivering hands-off, luxury short-term rental management with 5-star hospitality standards.
     </div>
-    <a class="button" href="contact.html">Contact Us</a>
-    <a class="button" href="index.html">Home</a>
+    <div class="button-group">
+      <a class="button" href="contact.html">Contact Us</a>
+      <a class="button" href="index.html">Home</a>
+    </div>
   </header>
 
   <div class="about-content">
