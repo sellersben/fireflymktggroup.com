@@ -30,6 +30,7 @@
       z-index: 1000;
       backdrop-filter: blur(6px);
     }
+
     nav a {
       color: #B99B5F;
       text-decoration: none;
@@ -38,6 +39,7 @@
       font-size: 1em;
       transition: 0.3s;
     }
+
     nav a:hover { color: #ffffff; }
 
     header {
@@ -49,7 +51,7 @@
     }
 
     img {
-      width: 260px; 
+      width: 260px;
       max-width: 85%;
       margin: 0 auto 30px auto;
       filter: drop-shadow(2px 2px 6px #000);
@@ -90,6 +92,7 @@
     }
     .button:hover { background: #a88c50; }
 
+    /* Smaller header buttons */
     .button.small-btn {
       padding: 8px 20px;
       font-size: 0.9em;
@@ -114,13 +117,33 @@
       text-align: left;
     }
 
-    .pillar h3 { font-size: 1.3em; margin-bottom: 10px; }
-    .pillar p { font-size: 0.95em; line-height: 1.5em; }
+    .pillar h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
 
-    .testimonials { max-width: 700px; margin: 50px auto; text-align: center; }
-    .testimonial { margin: 15px 0; font-style: italic; font-size: 1.1em; }
+    .pillar p {
+      font-size: 0.95em;
+      line-height: 1.5em;
+    }
 
-    .trust { margin: 30px auto; font-size: 1.1em; max-width: 600px; }
+    .testimonials {
+      max-width: 700px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin: 15px 0;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+
+    .trust {
+      margin: 30px auto;
+      font-size: 1.1em;
+      max-width: 600px;
+    }
 
     footer {
       background: rgba(5,5,5,0.95);
@@ -128,6 +151,7 @@
       margin-top: 40px;
       font-size: 0.9em;
     }
+
     footer a { color: #B99B5F; text-decoration: none; margin: 0 8px; }
     footer a:hover { text-decoration: underline; }
 
@@ -151,11 +175,13 @@
   </nav>
 
   <header>
-    <img src="images/logo7.png" alt="Firefly Logo">
+    <img src="./logo7.png" alt="Firefly Logo">
     <h1>Luxury Asset Management & Short-Term Rental Optimization</h1>
+
     <div class="tagline">
       5-star hospitality standards for premium property owners. We maximize revenue through expert staging, concierge service, and compliance management.
     </div>
+
     <a class="button small-btn" href="about.html">Learn More</a>
     <a class="button small-btn" href="contact.html">Contact Us</a>
   </header>
