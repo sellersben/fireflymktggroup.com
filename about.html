@@ -7,7 +7,7 @@
 
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: url('https://www.transparenttextures.com/patterns/black-leather.png');
       background-color: #0A0A0A;
       color: #B99B5F;
@@ -17,6 +17,7 @@
       line-height: 1.6em;
     }
 
+    /* --- NAVIGATION BAR --- */
     nav {
       position: sticky;
       top: 0;
@@ -38,31 +39,34 @@
     }
     nav a:hover { color: #ffffff; }
 
+    /* --- HEADER SECTION --- */
     header {
-      padding: 80px 20px 50px 20px;
+      padding: 30px 20px 20px 20px; /* reduced top padding */
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
 
-    img {
-      width: 260px; 
-      max-width: 85%;
-      margin: 0 auto 30px auto;
+    .logo {
+      width: 180px; /* match home page */
+      max-width: 80%;
+      margin-bottom: 15px; /* closer spacing */
       filter: drop-shadow(2px 2px 6px #000);
     }
 
     h1 {
-      font-size: 2.2em;
-      max-width: 800px;
-      margin: 0 auto 15px auto;
+      font-size: 1.9em;
+      max-width: 700px;
+      margin: 0 auto 10px auto;
       text-shadow: 1px 1px 3px #000;
+      line-height: 1.2em;
     }
 
     .tagline {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 0 auto 30px auto;
+      font-size: 1.1em;
+      max-width: 650px;
+      margin: 0 auto 15px auto;
       opacity: 0;
       animation: fadeInUp 1.5s forwards;
     }
@@ -72,37 +76,37 @@
       100% { opacity: 1; transform: translateY(0);}
     }
 
+    /* --- BUTTONS --- */
     .button {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 28px;
+      margin: 5px 8px;
+      padding: 10px 25px; /* match rest of site */
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
       border-radius: 8px;
       font-size: 1em;
       font-weight: bold;
-      transition: 0.3s;
+      transition: transform 0.3s, background 0.3s;
+      max-width: 200px;
+      text-align: center;
     }
-    .button:hover { background: #a88c50; }
-
-    .button.small-btn {
-      padding: 8px 20px;
-      font-size: 0.9em;
+    .button:hover { 
+      background: #a88c50; 
+      transform: translateY(-2px);
     }
 
+    /* --- ABOUT CONTENT --- */
     .about-content {
       max-width: 800px;
       margin: 30px auto 50px auto;
       text-align: left;
       padding: 20px;
     }
-
     .about-content h2 {
       font-size: 1.6em;
       margin-bottom: 15px;
     }
-
     .about-content p {
       font-size: 1em;
       line-height: 1.6em;
@@ -112,7 +116,6 @@
     footer {
       background: rgba(5,5,5,0.95);
       padding: 25px 15px;
-      margin-top: 40px;
       font-size: 0.9em;
     }
     footer a { color: #B99B5F; text-decoration: none; margin: 0 8px; }
@@ -121,9 +124,10 @@
     @media (max-width: 768px) {
       h1 { font-size: 1.6em; }
       .tagline { font-size: 1em; }
-      img { width: 200px; }
+      .logo { width: 160px; }
       nav a { margin: 0 8px; font-size: 0.9em; }
     }
+
   </style>
 </head>
 <body>
@@ -137,17 +141,13 @@
   </nav>
 
   <header>
-    <!-- ✅ FIXED LOGO PATH -->
-    <img src="logo7.png" alt="Firefly Logo">
-
+    <img src="logo7.png" alt="Firefly Logo" class="logo">
     <h1>About Firefly Real Estate Holdings</h1>
-
     <div class="tagline">
       Delivering hands-off, luxury short-term rental management with 5-star hospitality standards.
     </div>
-
-    <a class="button small-btn" href="contact.html">Contact Us</a>
-    <a class="button small-btn" href="index.html">Home</a>
+    <a class="button" href="contact.html">Contact Us</a>
+    <a class="button" href="index.html">Home</a>
   </header>
 
   <div class="about-content">
