@@ -74,6 +74,15 @@
       100% { opacity: 1; transform: translateY(0);}
     }
 
+    /* Flex container for buttons */
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: nowrap;
+    }
+
     .button {
       display: inline-block;
       margin: 5px 8px;
@@ -123,7 +132,6 @@
       .logo { width: 160px; }
       nav a { margin: 0 8px; font-size: 0.9em; }
     }
-
   </style>
 </head>
 <body>
@@ -142,8 +150,11 @@
     <div class="tagline">
       Delivering hands-off, luxury short-term rental management with 5-star hospitality standards.
     </div>
-    <a class="button" href="contact.html">Contact Us</a>
-    <a class="button" href="index.html">Home</a>
+    <!-- Buttons now in a single line -->
+    <div class="header-buttons">
+      <a class="button" href="contact.html">Contact Us</a>
+      <a class="button" href="index.html">Home</a>
+    </div>
   </header>
 
   <div class="about-content">
