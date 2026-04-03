@@ -7,7 +7,7 @@
 
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: url('https://www.transparenttextures.com/patterns/black-leather.png');
       background-color: #0A0A0A;
       color: #B99B5F;
@@ -39,19 +39,23 @@
     nav a:hover { color: #ffffff; }
 
     header {
-      padding: 80px 20px 20px 20px;
+      padding: 30px 20px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
-    img {
-      width: 260px;
-      max-width: 85%;
-      margin: 0 auto 20px auto;
+    .logo {
+      width: 180px;
+      max-width: 80%;
+      margin-bottom: 15px;
       filter: drop-shadow(2px 2px 6px #000);
     }
 
     h1 {
-      font-size: 2.2em;
-      max-width: 800px;
+      font-size: 1.9em;
+      max-width: 700px;
       margin: 0 auto 10px auto;
       text-shadow: 1px 1px 3px #000;
     }
@@ -119,13 +123,13 @@
 
     .button {
       display: inline-block;
-      margin: 10px;
-      padding: 8px 20px;
+      margin: 5px 8px;
+      padding: 10px 25px;
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 0.9em;
+      font-size: 1em;
       font-weight: bold;
       transition: 0.3s;
     }
@@ -134,8 +138,8 @@
     footer {
       background: rgba(5,5,5,0.95);
       padding: 25px 15px;
-      margin-top: 40px;
       font-size: 0.9em;
+      margin-top: 40px;
     }
     footer a { color: #B99B5F; text-decoration: none; margin: 0 8px; }
     footer a:hover { text-decoration: underline; }
@@ -143,7 +147,7 @@
     @media (max-width: 768px) {
       h1 { font-size: 1.6em; }
       .subtext { font-size: 0.95em; }
-      img { width: 200px; }
+      .logo { width: 160px; }
       nav a { margin: 0 8px; font-size: 0.9em; }
     }
   </style>
@@ -159,17 +163,15 @@
   </nav>
 
   <header>
-    <!-- ✅ FIXED LOGO PATH -->
-    <img src="logo7.png" alt="Firefly Logo">
-
-    <h1>Contact Firefly Real Estate Holdings</h1>
+    <img src="logo7.png" alt="Firefly Real Estate Holdings LLC Logo" class="logo">
+    <h1>Contact Firefly Real Estate Holdings LLC</h1>
     <div class="subtext">
       Let’s maximize your rental’s performance with a luxury, hands-off experience.
     </div>
   </header>
 
   <p>Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a></p>
-  <p>Phone: (615) 266-6787 | Nashville, TN</p>
+  <p>Phone: (615) 266-6787 | Nashville, WY</p>
 
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
     <label>Name:</label>
@@ -194,8 +196,9 @@
   <a class="button" href="about.html">About</a>
 
   <footer>
+    Firefly Real Estate Holdings LLC is a registered Wyoming Limited Liability Company.<br>
     Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> |
-    Phone: (615) 266-6787 | Nashville, TN<br><br>
+    Phone: (615) 266-6787 | Nashville, WY<br><br>
     <a href="index.html">Home</a> |
     <a href="about.html">About</a> |
     <a href="privacy.html">Privacy Policy</a> |
