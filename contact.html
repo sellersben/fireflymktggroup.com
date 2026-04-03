@@ -7,7 +7,7 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       background: url('https://www.transparenttextures.com/patterns/black-leather.png');
       background-color: #0A0A0A;
       color: #B99B5F;
@@ -17,7 +17,6 @@
       line-height: 1.6em;
     }
 
-    /* --- NAVIGATION BAR --- */
     nav {
       position: sticky;
       top: 0;
@@ -29,7 +28,6 @@
       z-index: 1000;
       backdrop-filter: blur(6px);
     }
-
     nav a {
       color: #B99B5F;
       text-decoration: none;
@@ -38,23 +36,22 @@
       font-size: 1em;
       transition: 0.3s;
     }
-
     nav a:hover { color: #ffffff; }
 
     header {
-      padding: 70px 20px 20px 20px;
+      padding: 80px 20px 20px 20px;
     }
 
     img {
-      width: 240px;
+      width: 260px;
       max-width: 85%;
       margin: 0 auto 20px auto;
       filter: drop-shadow(2px 2px 6px #000);
     }
 
     h1 {
-      font-size: 2em;
-      max-width: 700px;
+      font-size: 2.2em;
+      max-width: 800px;
       margin: 0 auto 10px auto;
       text-shadow: 1px 1px 3px #000;
     }
@@ -67,9 +64,9 @@
       animation: fadeInUp 1.2s forwards;
     }
 
-    p {
-      font-size: 1em;
-      margin: 6px auto;
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
     }
 
     form {
@@ -103,10 +100,7 @@
       margin-top: 10px;
       transition: 0.3s;
     }
-
-    input[type="submit"]:hover {
-      background: #a88c50;
-    }
+    input[type="submit"]:hover { background: #a88c50; }
 
     label {
       display: block;
@@ -126,58 +120,36 @@
     .button {
       display: inline-block;
       margin: 10px;
-      padding: 10px 24px;
+      padding: 8px 20px;
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 0.95em;
+      font-size: 0.9em;
       font-weight: bold;
       transition: 0.3s;
     }
-
     .button:hover { background: #a88c50; }
-
-    /* smaller header buttons */
-    .button.small-btn {
-      padding: 8px 20px;
-      font-size: 0.9em;
-    }
 
     footer {
       background: rgba(5,5,5,0.95);
       padding: 25px 15px;
-      font-size: 0.9em;
       margin-top: 40px;
+      font-size: 0.9em;
     }
-
-    footer a {
-      color: #B99B5F;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
+    footer a { color: #B99B5F; text-decoration: none; margin: 0 8px; }
     footer a:hover { text-decoration: underline; }
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-
-    /* --- MOBILE --- */
     @media (max-width: 768px) {
-      h1 { font-size: 1.5em; }
+      h1 { font-size: 1.6em; }
       .subtext { font-size: 0.95em; }
-      img { width: 190px; }
-      nav a { margin: 0 8px; font-size: 0.85em; }
+      img { width: 200px; }
+      nav a { margin: 0 8px; font-size: 0.9em; }
     }
-
   </style>
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -187,9 +159,8 @@
   </nav>
 
   <header>
-    <img src="logo7.png" style="image-rendering: -webkit-optimize-contrast;">
+    <img src="images/logo7.png" alt="Firefly Logo">
     <h1>Contact Firefly Real Estate Holdings</h1>
-
     <div class="subtext">
       Let’s maximize your rental’s performance with a luxury, hands-off experience.
     </div>
@@ -217,13 +188,12 @@
     </div>
   </form>
 
-  <a class="button small-btn" href="index.html">Home</a>
-  <a class="button small-btn" href="about.html">About</a>
+  <a class="button" href="index.html">Home</a>
+  <a class="button" href="about.html">About</a>
 
   <footer>
     Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> |
     Phone: (615) 266-6787 | Nashville, TN<br><br>
-
     <a href="index.html">Home</a> |
     <a href="about.html">About</a> |
     <a href="privacy.html">Privacy Policy</a> |
@@ -254,3 +224,5 @@
 
 </body>
 </html>
+
+✅ All three pages now:
