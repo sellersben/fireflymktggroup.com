@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>Contact Firefly Real Estate Holdings LLC</title>
   <meta name="description" content="Reach out to Firefly Real Estate Holdings LLC in Nashville for full-service luxury rental management and short-term rental optimization.">
-  <meta name="keywords" content="Contact Firefly, Luxury rental management, Short term rentals, Airbnb, VRBO, Nashville">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #0A0A0A;
+      background: url('https://www.transparenttextures.com/patterns/black-leather.png');
+      background-color: #0A0A0A;
       color: #B99B5F;
       margin: 0;
       padding: 0;
@@ -20,82 +21,162 @@
     nav {
       position: sticky;
       top: 0;
-      background: #0A0A0A;
+      background: rgba(10,10,10,0.95);
       border-bottom: 1px solid #B99B5F;
       display: flex;
       justify-content: center;
-      padding: 15px 0;
+      padding: 12px 0;
       z-index: 1000;
+      backdrop-filter: blur(6px);
     }
+
     nav a {
       color: #B99B5F;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 20px;
-      font-size: 1.1em;
+      margin: 0 15px;
+      font-size: 1em;
       transition: 0.3s;
     }
+
     nav a:hover { color: #ffffff; }
 
-    header { padding: 80px 20px; }
-    h1 { font-size: 3em; text-shadow: 1px 1px 3px #000; margin-bottom: 20px; }
-    p { font-size: 1.2em; margin: 10px auto; max-width: 700px; }
-    a.button {
-      display: inline-block;
-      margin: 15px 10px;
-      padding: 15px 30px;
-      background: #B99B5F;
-      color: #0A0A0A;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.2em;
-      font-weight: bold;
-      transition: 0.3s;
+    header {
+      padding: 70px 20px 20px 20px;
     }
-    a.button:hover { background: #a88c50; }
 
-    form { max-width: 500px; margin: 30px auto 60px auto; text-align: left; }
+    img {
+      width: 240px;
+      max-width: 85%;
+      margin: 0 auto 20px auto;
+      filter: drop-shadow(2px 2px 6px #000);
+    }
+
+    h1 {
+      font-size: 2em;
+      max-width: 700px;
+      margin: 0 auto 10px auto;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .subtext {
+      font-size: 1.05em;
+      max-width: 600px;
+      margin: 10px auto 25px auto;
+      opacity: 0;
+      animation: fadeInUp 1.2s forwards;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 6px auto;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 30px auto 50px auto;
+      text-align: left;
+      background: rgba(10,10,10,0.85);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #B99B5F;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    }
+
     input, textarea {
       width: 100%;
-      padding: 12px;
-      margin: 10px 0;
+      padding: 10px;
+      margin: 8px 0;
       border-radius: 6px;
       border: 1px solid #B99B5F;
       background: #0A0A0A;
       color: #B99B5F;
-      font-size: 1em;
+      font-size: 0.95em;
     }
+
     input[type="submit"] {
       background: #B99B5F;
       color: #0A0A0A;
       border: none;
       cursor: pointer;
       font-weight: bold;
+      margin-top: 10px;
       transition: 0.3s;
     }
-    input[type="submit"]:hover { background: #a88c50; }
 
-    label { display: block; margin-top: 10px; font-weight: bold; }
+    input[type="submit"]:hover {
+      background: #a88c50;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
     .success-message {
       color: #a3d9a5;
       font-weight: bold;
-      margin-top: 20px;
+      margin-top: 15px;
       text-align: center;
+      display: none;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 24px;
+      background: #B99B5F;
+      color: #0A0A0A;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.95em;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #a88c50;
     }
 
     footer {
-      background: #080808;
-      padding: 30px 20px;
-      font-size: 1em;
-      text-align: center;
+      background: rgba(5,5,5,0.95);
+      padding: 25px 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
     }
-    footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
+
+    footer a {
+      color: #B99B5F;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
     footer a:hover { text-decoration: underline; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    /* --- MOBILE --- */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.5em; }
+      .subtext { font-size: 0.95em; }
+      img { width: 190px; }
+      nav a {
+        margin: 0 8px;
+        font-size: 0.85em;
+      }
+    }
+
   </style>
 </head>
+
 <body>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -105,44 +186,53 @@
   </nav>
 
   <header>
-    <h1>Contact Firefly Real Estate Holdings LLC</h1>
+    <img src="logo7.png" alt="Firefly Real Estate Holdings LLC Logo">
+    <h1>Contact Firefly Real Estate Holdings</h1>
+
+    <div class="subtext">
+      Let’s maximize your rental’s performance with a luxury, hands-off experience.
+    </div>
   </header>
 
   <p>Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a></p>
   <p>Phone: (615) 266-6787 | Nashville, TN</p>
-  <p>Reach out today to see how we can help your rental shine!</p>
 
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
-    <label for="name">Name:</label>
-    <input id="name" type="text" name="name" required>
+    <label>Name:</label>
+    <input type="text" name="name" required>
 
-    <label for="email">Email:</label>
-    <input id="email" type="email" name="email" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
 
-    <label for="phone">Phone:</label>
-    <input id="phone" type="tel" name="phone" placeholder="(123) 456-7890" required>
+    <label>Phone:</label>
+    <input type="tel" name="phone" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+    <label>Message:</label>
+    <textarea name="message" rows="4" required></textarea>
 
     <input type="submit" value="Send Message">
-    <div class="success-message" id="successMessage" style="display:none;">
+    <div class="success-message" id="successMessage">
       Thanks! Your message has been sent.
     </div>
   </form>
 
-  <a class="button" href="index.html">Back to Home</a>
-  <a class="button" href="about.html">About Us</a>
+  <a class="button" href="index.html">Home</a>
+  <a class="button" href="about.html">About</a>
 
   <footer>
-    Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> | Phone: (615) 266-6787 | Nashville, TN<br>
-    <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+    Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> |
+    Phone: (615) 266-6787 | Nashville, TN<br><br>
+
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Use</a>
   </footer>
 
   <script>
-    // Show success message without leaving page
     const form = document.querySelector('form');
     const successMessage = document.getElementById('successMessage');
+
     form.addEventListener('submit', function(e){
       e.preventDefault();
       fetch(form.action, {
