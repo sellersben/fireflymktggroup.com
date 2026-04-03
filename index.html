@@ -5,10 +5,12 @@
   <title>Firefly Real Estate Holdings LLC</title>
   <meta name="description" content="Firefly Real Estate Holdings LLC provides full-service luxury asset management and short-term rental optimization in Nashville.">
   <meta name="keywords" content="Luxury rental management, Short term rentals, Airbnb, VRBO, Home staging, Rental marketing, Nashville">
+
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: #0A0A0A;
+      background: url('https://www.transparenttextures.com/patterns/black-leather.png');
+      background-color: #0A0A0A;
       color: #B99B5F;
       margin: 0;
       padding: 0;
@@ -21,56 +23,69 @@
     nav {
       position: sticky;
       top: 0;
-      background: #0A0A0A;
+      background: rgba(10,10,10,0.95);
       border-bottom: 1px solid #B99B5F;
       display: flex;
       justify-content: center;
-      padding: 15px 0;
+      padding: 12px 0;
       z-index: 1000;
+      backdrop-filter: blur(6px);
     }
     nav a {
       color: #B99B5F;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 20px;
-      font-size: 1.1em;
+      margin: 0 15px;
+      font-size: 1em;
       transition: 0.3s;
     }
     nav a:hover { color: #ffffff; }
 
     header {
-      padding: 120px 20px 80px 20px;
+      padding: 80px 20px 50px 20px;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
+
     img {
-      width: 300px; 
-      max-width: 90%;
-      margin-bottom: 50px;
-      filter: drop-shadow(2px 2px 4px #000);
+      width: 260px; 
+      max-width: 85%;
+      margin: 0 auto 30px auto;
+      filter: drop-shadow(2px 2px 6px #000);
     }
+
     h1 {
-      font-size: 3.2em;
-      margin-bottom: 20px;
+      font-size: 2.2em;
+      max-width: 800px;
+      margin: 0 auto 15px auto;
       text-shadow: 1px 1px 3px #000;
+      line-height: 1.3em;
     }
+
     .tagline {
-      font-size: 1.5em;
-      margin-bottom: 40px;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
       opacity: 0;
-      animation: fadeInUp 2s forwards;
+      animation: fadeInUp 1.5s forwards;
     }
+
     @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(20px);}
       100% { opacity: 1; transform: translateY(0);}
     }
+
     .button {
       display: inline-block;
-      margin: 15px 10px;
-      padding: 15px 35px;
+      margin: 10px;
+      padding: 12px 28px;
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: bold;
       transition: 0.3s;
     }
@@ -80,58 +95,79 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 60px 20px;
+      margin: 40px 20px;
       gap: 20px;
     }
+
     .pillar {
-      background: #0A0A0A;
+      background: rgba(10,10,10,0.85);
       border: 1px solid #B99B5F;
       border-radius: 12px;
-      padding: 30px 20px;
-      max-width: 280px;
-      flex: 1 1 250px;
-      box-shadow: 0 0 10px #000;
+      padding: 25px 20px;
+      max-width: 260px;
+      flex: 1 1 220px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
       text-align: left;
     }
+
     .pillar h3 {
-      font-size: 1.5em;
-      margin-bottom: 15px;
+      font-size: 1.3em;
+      margin-bottom: 10px;
     }
+
     .pillar p {
-      font-size: 1em;
+      font-size: 0.95em;
       line-height: 1.5em;
     }
 
     .testimonials {
-      max-width: 800px;
-      margin: 60px auto;
+      max-width: 700px;
+      margin: 50px auto;
       text-align: center;
     }
+
     .testimonial {
-      margin: 20px 0;
+      margin: 15px 0;
       font-style: italic;
-      font-size: 1.2em;
-      line-height: 1.6em;
+      font-size: 1.1em;
     }
 
     .trust {
-      margin: 40px auto;
-      font-size: 1.2em;
+      margin: 30px auto;
+      font-size: 1.1em;
       max-width: 600px;
-      line-height: 1.5em;
     }
 
     footer {
-      background: #080808;
-      padding: 30px 20px;
-      margin-top: 60px;
-      font-size: 1em;
-      text-align: center;
+      background: rgba(5,5,5,0.95);
+      padding: 25px 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
-    footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
+
+    footer a { color: #B99B5F; text-decoration: none; margin: 0 8px; }
     footer a:hover { text-decoration: underline; }
+
+    /* --- MOBILE OPTIMIZATION --- */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.6em;
+      }
+      .tagline {
+        font-size: 1em;
+      }
+      img {
+        width: 200px;
+      }
+      nav a {
+        margin: 0 8px;
+        font-size: 0.9em;
+      }
+    }
+
   </style>
 </head>
+
 <body>
 
   <!-- NAVIGATION BAR -->
@@ -144,11 +180,13 @@
   </nav>
 
   <header>
-    <img src="logo3.png" alt="Firefly Real Estate Holdings LLC Logo">
-    <h1>Full-Service Luxury Asset Management & Short-Term Rental Optimization</h1>
+    <img src="logo7.png" alt="Firefly Real Estate Holdings LLC Logo">
+    <h1>Luxury Asset Management & Short-Term Rental Optimization</h1>
+
     <div class="tagline">
-      We provide 5-star hotel standards for premium property owners, ensuring maximum yield through professional staging, 24/7 concierge support, and rigorous regulatory compliance.
+      5-star hospitality standards for premium property owners. We maximize revenue through expert staging, concierge service, and compliance management.
     </div>
+
     <a class="button" href="about.html">Learn More</a>
     <a class="button" href="contact.html">Contact Us</a>
   </header>
@@ -156,15 +194,17 @@
   <div class="core-pillars">
     <div class="pillar">
       <h3>Hotel-Grade Operations</h3>
-      <p>Professional cleaning and maintenance protocols that exceed 5-star hospitality standards.</p>
+      <p>Professional cleaning and maintenance exceeding luxury hospitality standards.</p>
     </div>
+
     <div class="pillar">
       <h3>Turnkey Logistics</h3>
-      <p>White-glove staging, guest check-in/check-out, and 24-hour on-site tenant support.</p>
+      <p>White-glove staging, guest coordination, and 24/7 support.</p>
     </div>
+
     <div class="pillar">
       <h3>Regulatory Shield</h3>
-      <p>Comprehensive compliance management for city and state ordinances to protect your investment.</p>
+      <p>Full compliance management to protect your investment.</p>
     </div>
   </div>
 
@@ -174,14 +214,19 @@
 
   <section class="testimonials">
     <h2>What Clients Say</h2>
-    <div class="testimonial">“Firefly Real Estate Holdings LLC helped me book more nights and earn more revenue!” – Jane D.</div>
-    <div class="testimonial">“Professional, attentive, and my home looks amazing.” – Mark T.</div>
-    <div class="testimonial">“Everything handled seamlessly, highly recommend Firefly!” – Emily R.</div>
+    <div class="testimonial">“Booked more nights and increased revenue immediately.” – Jane D.</div>
+    <div class="testimonial">“Professional and seamless from start to finish.” – Mark T.</div>
+    <div class="testimonial">“Hands down the best management team I’ve worked with.” – Emily R.</div>
   </section>
 
   <footer>
-    Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> | Phone: (615) 266-6787 | Nashville, TN<br>
-    <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+    Email: <a href="mailto:info@fireflymktggroup.com">info@fireflymktggroup.com</a> |
+    Phone: (615) 266-6787 | Nashville, TN<br><br>
+
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Use</a>
   </footer>
 
 </body>
