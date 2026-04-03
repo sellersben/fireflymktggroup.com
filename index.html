@@ -44,8 +44,8 @@
     /* --- HERO SECTION --- */
     header {
       position: relative;
-      padding: 50px 20px 30px 20px;
-      min-height: 70vh;
+      padding: 30px 20px 20px 20px; /* reduced top padding */
+      min-height: 60vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -53,24 +53,24 @@
     }
 
     .logo {
-      width: 200px;
+      width: 180px; /* slightly smaller */
       max-width: 80%;
-      margin-bottom: 20px;
+      margin-bottom: 15px; /* closer spacing */
       filter: drop-shadow(2px 2px 6px #000);
     }
 
     h1 {
-      font-size: 2em;
-      max-width: 750px;
-      margin: 0 auto 15px auto;
+      font-size: 1.9em;
+      max-width: 700px;
+      margin: 0 auto 10px auto;
       text-shadow: 1px 1px 3px #000;
       line-height: 1.2em;
     }
 
     .tagline {
       font-size: 1.1em;
-      max-width: 700px;
-      margin: 0 auto 25px auto;
+      max-width: 650px;
+      margin: 0 auto 15px auto;
       opacity: 0;
       animation: fadeInUp 1.5s forwards;
     }
@@ -80,10 +80,11 @@
       100% { opacity: 1; transform: translateY(0);}
     }
 
+    /* --- HERO BUTTONS --- */
     .button {
       display: inline-block;
-      margin: 5px 10px;
-      padding: 12px 28px;
+      margin: 5px 8px;
+      padding: 10px 25px; /* smaller than before */
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
@@ -91,6 +92,8 @@
       font-size: 1em;
       font-weight: bold;
       transition: transform 0.3s, background 0.3s;
+      max-width: 200px;
+      text-align: center;
     }
     .button:hover { 
       background: #a88c50; 
@@ -159,7 +162,6 @@
       .logo { width: 160px; }
       nav a { margin: 0 8px; font-size: 0.9em; }
     }
-
   </style>
 </head>
 <body>
