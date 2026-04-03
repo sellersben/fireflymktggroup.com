@@ -91,6 +91,13 @@
     }
     .button:hover { background: #a88c50; }
 
+    /* Smaller buttons for header */
+    .button.small-btn {
+      padding: 8px 20px;
+      font-size: 0.9em;
+    }
+    .button.small-btn:hover { background: #a88c50; }
+
     .core-pillars {
       display: flex;
       justify-content: center;
@@ -150,19 +157,10 @@
 
     /* --- MOBILE OPTIMIZATION --- */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 1.6em;
-      }
-      .tagline {
-        font-size: 1em;
-      }
-      img {
-        width: 200px;
-      }
-      nav a {
-        margin: 0 8px;
-        font-size: 0.9em;
-      }
+      h1 { font-size: 1.6em; }
+      .tagline { font-size: 1em; }
+      img { width: 200px; }
+      nav a { margin: 0 8px; font-size: 0.9em; }
     }
 
   </style>
@@ -179,16 +177,17 @@
     <a href="terms.html">Terms of Use</a>
   </nav>
 
+  <!-- HEADER -->
   <header>
-    <img src="logo7.png" style="image-rendering: -webkit-optimize-contrast;">
+    <img src="logo7.png">
     <h1>Luxury Asset Management & Short-Term Rental Optimization</h1>
 
     <div class="tagline">
       5-star hospitality standards for premium property owners. We maximize revenue through expert staging, concierge service, and compliance management.
     </div>
 
-    <a class="button" href="about.html">Learn More</a>
-    <a class="button" href="contact.html">Contact Us</a>
+    <a class="button small-btn" href="about.html">Learn More</a>
+    <a class="button small-btn" href="contact.html">Contact Us</a>
   </header>
 
   <div class="core-pillars">
